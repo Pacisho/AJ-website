@@ -214,6 +214,15 @@ export default function MusicPage() {
       category: "at",
       description: "Fujii Kaze Cover",
     },
+    {
+      id: 23,
+      title: "Loop",
+      artist: "ASIA7",
+      image: "/a52.jpg",
+      audio: "/m23.mp3",
+      category: "at",
+      description: "Official MV",
+    },
   ];
 
   const categories = [
