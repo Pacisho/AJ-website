@@ -196,6 +196,15 @@ export default function MusicPage() {
       category: "at",
       description: "Official Audio",
     },
+    {
+      id: 21,
+      title: "กีติดไฟ",
+      artist: "ผัวมาดามแพม",
+      image: "/a50.jpg",
+      audio: "/m21.mp4",
+      category: "at",
+      description: "TikTok",
+    },
   ];
 
   const categories = [
