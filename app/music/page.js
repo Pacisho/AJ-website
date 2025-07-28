@@ -97,6 +97,15 @@ export default function MusicPage() {
       category: "pop",
       description: "Live Session",
     },
+    {
+      id: 10,
+      title: "จางหาย",
+      artist: "Goy Arachaporn",
+      image: "/a39.jpg",
+      audio: "/m10.mp3",
+      category: "at",
+      description: "cover mv by 606",
+    },
   ];
 
   const categories = [
