@@ -109,11 +109,20 @@ export default function MusicPage() {
                 <p className="text-muted mb-2">โดย {song.artist}</p>
                 <p className="card-text">{song.description}</p>
                 <button
-                  className="btn btn-primary w-100 mt-3"
-                  onClick={() => setPlayingSong(song.audio)}
-                >
-                  <i className="bi bi-play-circle me-2"></i> เล่นเพลง
+              style={{
+             background: 'linear-gradient(135deg, #ff0055ff, #325ab7ff)',
+             border: 'none',
+             borderRadius: '12px',
+             color: 'white',
+             fontWeight: '600',
+             transition: 'all 0.3s ease'
+           }}
+             className="w-100 mt-3"
+               onClick={() => setPlayingSong(song.audio)}
+              >
+              <i className="bi bi-play-circle me-2"></i> เล่นเพลง
                 </button>
+
               </div>
             </div>
           </div>
