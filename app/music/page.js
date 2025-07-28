@@ -205,6 +205,15 @@ export default function MusicPage() {
       category: "at",
       description: "TikTok",
     },
+    {
+      id: 21,
+      title: "Michi Teyu Ku",
+      artist: "Earthernative",
+      image: "/a51.jpg",
+      audio: "/m22.mp3",
+      category: "at",
+      description: "Fujii Kaze Cover",
+    },
   ];
 
   const categories = [
