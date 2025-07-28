@@ -228,7 +228,7 @@ export default function MusicPage() {
       title: "เรื่องราวของ DOLIA",
       artist: "DOLIA",
       image: "/a53.jpg",
-      audio: "/m24.mp3",
+      audio: "/m23.mp3",
       category: "at",
       description: "Official MV",
     },
