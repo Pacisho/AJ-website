@@ -127,11 +127,11 @@ export default function MusicPage() {
        {
       id: 13,
       title: "The Happiest Girl",
-      artist: "BLACKPINK",
+      artist: "Stephen Dawes",
       image: "/a42.jpg",
       audio: "/m13.mp3",
       category: "af",
-      description: "Official Audio",
+      description: "Lyric Video",
     },
      {
       id: 14,
