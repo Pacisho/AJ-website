@@ -229,8 +229,8 @@ export default function MusicPage() {
       artist: "DOLIA",
       image: "/a53.jpg",
       audio: "/m24.mp3",
-      category: "af",
-      description: "Cinematic",
+      category: "at",
+      description: "Official MV",
     },
   ];
 
