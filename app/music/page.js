@@ -223,6 +223,15 @@ export default function MusicPage() {
       category: "at",
       description: "Official MV",
     },
+     {
+      id: 24,
+      title: "เรื่องราวของ DOLIA",
+      artist: "DOLIA",
+      image: "/a53.jpg",
+      audio: "/m24.mp3",
+      category: "af",
+      description: "Cinematic",
+    },
   ];
 
   const categories = [
