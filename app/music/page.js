@@ -8,13 +8,12 @@ export default function MusicPage() {
   const audioRef = useRef(null);
 
   const handlePlaySong = (audioSrc) => {
-  const globalAudio = document.getElementById('globalAudio');
-  if (globalAudio) {
-    globalAudio.src = audioSrc;
-    globalAudio.play().catch((err) => console.error("ไม่สามารถเล่นเพลงได้:", err));
-  }
-};
-
+    const globalAudio = document.getElementById('globalAudio');
+    if (globalAudio) {
+      globalAudio.src = audioSrc;
+      globalAudio.play().catch((err) => console.error("ไม่สามารถเล่นเพลงได้:", err));
+    }
+  };
 
   const songs = [
     {
@@ -32,7 +31,7 @@ export default function MusicPage() {
       artist: "แม็ค วัชรพล Ft. T-REX",
       image: "/a30.jpg",
       audio: "/m1.mp3",
-      category: "acoustic",
+      category: "rf",
       description: "เพลงอีสานซึ้งๆ จากศิลปินดัง",
     },
     {
@@ -41,23 +40,22 @@ export default function MusicPage() {
       artist: "SL MUSIC",
       image: "/a32.jpg",
       audio: "/m3.mp3",
-      category: "rock",
+      category: "pop",
       description: "เพลงใหม่ล่าสุดจากหมู่เรา ฝากติดตาม ผลงานด้วยนะครับ",
     },
   ];
 
   const categories = [
     { id: 'all', name: 'ทั้งหมด', icon: 'bi-music-note-list', color: '#6f00ffff' },
-    { id: 'pop', name: 'Pop', icon: 'bi-music-note', color: '#ff0000ff' },
-    { id: 'acoustic', name: 'Acoustic', icon: 'bi-headphones', color: '#00a9a5' },
-    { id: 'rock', name: 'Rock', icon: 'bi-boombox', color: '#232222ff' },
+    { id: 'pop', name: 'ภาคเหนือ', icon: 'bi-music-note', color: '#ff0000ff' },
+    { id: 'at', name: 'ภาคกลาง', icon: 'bi-headphones', color: '#00a9a5' },
+    { id: 'rf', name: 'ภาคอีสาน', icon: 'bi-boombox', color: '#232222ff' },
   ];
 
   const filteredSongs = activeCategory === 'all'
     ? songs
     : songs.filter(song => song.category === activeCategory);
 
-  // เมื่อเปลี่ยนเพลง ให้เล่นอัตโนมัติ
   useEffect(() => {
     if (audioRef.current && playingSong) {
       audioRef.current.load();
@@ -95,7 +93,7 @@ export default function MusicPage() {
       <div className="row g-4">
         {filteredSongs.map((song) => (
           <div key={song.id} className="col-md-6 col-lg-4">
-            <div className="card shadow-sm h-100 rounded-4 overflow-hidden">
+            <div className="card shadow-sm h-100 rounded-4 overflow-hidden d-flex flex-column">
               <Image
                 src={song.image}
                 alt={song.title}
@@ -104,25 +102,24 @@ export default function MusicPage() {
                 className="card-img-top"
                 style={{ height: '220px', objectFit: 'cover' }}
               />
-              <div className="card-body p-4">
+              <div className="card-body d-flex flex-column p-4">
                 <h5 className="card-title">{song.title}</h5>
                 <p className="text-muted mb-2">โดย {song.artist}</p>
                 <p className="card-text">{song.description}</p>
                 <button
-              style={{
-             background: 'linear-gradient(135deg, #ff0055ff, #325ab7ff)',
-             border: 'none',
-             borderRadius: '12px',
-             color: 'white',
-             fontWeight: '600',
-             transition: 'all 0.3s ease'
-           }}
-             className="w-100 mt-3"
-               onClick={() => setPlayingSong(song.audio)}
-              >
-              <i className="bi bi-play-circle me-2"></i> เล่นเพลง
+                  style={{
+                    background: 'linear-gradient(135deg, #ff0055ff, #325ab7ff)',
+                    border: 'none',
+                    borderRadius: '12px',
+                    color: 'white',
+                    fontWeight: '600',
+                    transition: 'all 0.3s ease'
+                  }}
+                  className="w-100 mt-auto"
+                  onClick={() => setPlayingSong(song.audio)}
+                >
+                  <i className="bi bi-play-circle me-2"></i> เล่นเพลง
                 </button>
-
               </div>
             </div>
           </div>
