@@ -106,6 +106,15 @@ export default function MusicPage() {
       category: "at",
       description: "cover mv by 606",
     },
+     {
+      id: 11,
+      title: "พี่สาวครับ",
+      artist: "แปม ไกอา หน้ากากโพนี่",
+      image: "/a40.jpg",
+      audio: "/m11.mp3",
+      category: "pop",
+      description: "We Kid Thailand เด็กร้องก้องโลก",
+    },
   ];
 
   const categories = [
