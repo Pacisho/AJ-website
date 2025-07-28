@@ -198,15 +198,6 @@ export default function MusicPage() {
     },
     {
       id: 21,
-      title: "กีติดไฟ",
-      artist: "ผัวมาดามแพม",
-      image: "/a50.jpg",
-      audio: "/m21.mp4",
-      category: "at",
-      description: "TikTok",
-    },
-    {
-      id: 21,
       title: "Michi Teyu Ku",
       artist: "Earthernative",
       image: "/a51.jpg",
