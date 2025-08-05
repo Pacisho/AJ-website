@@ -4,7 +4,7 @@ import React from "react";
 export default function UiUxDesignPage() {
   const styles = {
     container: {
-      fontFamily: "Arial, sans-serif",
+      fontFamily: "'Poppins', sans-serif",
       backgroundColor: "#f9f9f9",
       color: "#333",
       paddingBottom: "40px",
@@ -14,6 +14,9 @@ export default function UiUxDesignPage() {
       color: "white",
       padding: "30px 20px",
       textAlign: "center",
+      borderBottomLeftRadius: "20% 10%",
+      borderBottomRightRadius: "20% 10%",
+      boxShadow: "0 4px 12px rgba(0,0,0,0.15)",
     },
     section: {
       maxWidth: "960px",
@@ -22,19 +25,21 @@ export default function UiUxDesignPage() {
     },
     box: {
       backgroundColor: "white",
-      borderRadius: "12px",
-      padding: "20px",
-      marginBottom: "20px",
-      boxShadow: "0 2px 8px rgba(0,0,0,0.1)",
+      borderRadius: "16px",
+      padding: "24px",
+      marginBottom: "24px",
+      boxShadow: "0 4px 16px rgba(0,0,0,0.08)",
     },
     heading: {
       color: "#fd7e14",
+      marginBottom: "12px",
     },
     footer: {
       textAlign: "center",
       padding: "20px",
       backgroundColor: "#eee",
       marginTop: "40px",
+      fontSize: "14px",
     },
   };
 
