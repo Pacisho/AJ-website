@@ -4,6 +4,7 @@ import { useState } from 'react';
 
 export default function About() {
   const [activeTab, setActiveTab] = useState('story');
+  
 
   // ข้อมูลส่วนตัว
   const personalInfo = {
@@ -22,9 +23,9 @@ export default function About() {
       { position: "ค้นหาข้อมูลของแต่ละคน", company: "Find information about each person", year: "2567" }
     ],
     socialMedia: [
-      { platform: "Instagram", handle: "@patrdnay1", icon: "bi-instagram" },
-      { platform: "YouTube", handle: "Phatdanai Kaeochan", icon: "bi-youtube" },
-      { platform: "Facebook", handle: "Phatdanai Kaeochan", icon: "bi-facebook" }
+      { platform: "Instagram", handle: "@patrdnay1", icon: "bi-instagram", url: "https://www.instagram.com/" },
+      { platform: "YouTube", handle: "Phatdanai Kaeochan", icon: "bi-youtube", url: "https://www.youtube.com/" },
+      { platform: "Facebook", handle: "Phatdanai Kaeochan", icon: "bi-facebook", url: "https://www.facebook.com/" },
     ]
   };
 
