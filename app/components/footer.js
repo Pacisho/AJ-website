@@ -87,6 +87,11 @@ export default function Footer() {
                   ติดต่อเรา
                 </Link>
               </li>
+              <li className="mb-2">
+                <Link href="/admin/users" className="text-decoration-none" style={{color: '#666', fontSize: '0.9rem', transition: 'color 0.3s'}}>
+                  รายชื่อผู้ใช้
+                </Link>
+              </li>
             </ul>
           </div>
           
@@ -113,6 +118,11 @@ export default function Footer() {
               <li className="mb-2">
                 <Link href="/service/other" className="text-decoration-none" style={{color: '#666', fontSize: '0.9rem', transition: 'color 0.3s'}}>
                   Other Services
+                </Link>
+              </li>
+              <li className="mb-2">
+                <Link href="/admin/users" className="text-decoration-none" style={{color: '#666', fontSize: '0.9rem', transition: 'color 0.3s'}}>
+                  Admin
                 </Link>
               </li>
             </ul>
