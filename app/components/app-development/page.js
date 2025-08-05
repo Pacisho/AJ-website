@@ -4,7 +4,7 @@ import React from "react";
 export default function AppDevelopmentPage() {
   const styles = {
     container: {
-      fontFamily: "Arial, sans-serif",
+      fontFamily: "'Poppins', sans-serif", // ฟอนต์สวยขึ้น
       backgroundColor: "#f9f9f9",
       color: "#333",
       paddingBottom: "40px",
@@ -14,6 +14,9 @@ export default function AppDevelopmentPage() {
       color: "white",
       padding: "30px 20px",
       textAlign: "center",
+      borderBottomLeftRadius: "20% 10%", // มุมโค้ง 20%
+      borderBottomRightRadius: "20% 10%",
+      boxShadow: "0 4px 12px rgba(0,0,0,0.15)",
     },
     section: {
       maxWidth: "960px",
@@ -22,29 +25,33 @@ export default function AppDevelopmentPage() {
     },
     box: {
       backgroundColor: "white",
-      borderRadius: "12px",
-      padding: "20px",
-      marginBottom: "20px",
-      boxShadow: "0 2px 8px rgba(0,0,0,0.1)",
+      borderRadius: "16px",
+      padding: "24px",
+      marginBottom: "24px",
+      boxShadow: "0 4px 16px rgba(0,0,0,0.08)",
     },
     heading: {
-      color: "#28a745",
+      color: "#25bb48",
+      marginBottom: "12px",
     },
     footer: {
       textAlign: "center",
       padding: "20px",
       backgroundColor: "#eee",
       marginTop: "40px",
+      fontSize: "14px",
     },
   };
 
   return (
     <div style={styles.container}>
+      {/* ส่วนหัว */}
       <header style={styles.header}>
         <h1>App Development คืออะไร?</h1>
         <p>การพัฒนาแอปพลิเคชันบนมือถือและอุปกรณ์อื่น ๆ</p>
       </header>
 
+      {/* เนื้อหา */}
       <section style={styles.section}>
         <div style={styles.box}>
           <h2 style={styles.heading}>1. Mobile App Development</h2>
@@ -70,6 +77,7 @@ export default function AppDevelopmentPage() {
         </div>
       </section>
 
+      {/* ท้ายหน้า */}
       <footer style={styles.footer}>
         © 2025 AppDev Thai | Phatdanai Kaeochan
       </footer>
